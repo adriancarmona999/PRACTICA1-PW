@@ -6,61 +6,83 @@
         Frutas Marga Puesto en el mercado municipal MERCA 80.
         Servicio a domicilio. Servicio a hosteleria. Fruteria Online
     </title>
+    <link rel = "stylesheet" type = "text/css" href = "./css/pruebaHeader.css" />
 </head>
 
 <!--Tiene que tener diseño adaptativo (responsive design) -->
 <body>
 
-<header>
-    <section id="imagenLogo">
-        <!--<img src ="logoFrutasMarga" id="logo01" -->
-    </section>
+<header id="header">
+    <div class ="cabecera">
 
-    <section id="NombreYDescripcion">
-        <h1>Frutas Marga</h1>
-        <h3>Puesto nº 1 en el mercado municipal MERCA 80.</h3>
-    </section>
+        <section id="NombreYDescripcion">
+            <h1>Frutas Marga</h1>
+            <h3 id="subtitulo">Puesto nº 1 en el mercado municipal MERCA 80.</h3>
+        </section>
+
+        <section id="imagenLogo">
+            <!--<img src ="logoFrutasMarga" id="logo01" -->
+        </section>
 
     <!-- Log in de usuario -->
-    <section id="formularioInicioSesion">
-        <form>
-            <fieldset>
-                <legend> Inicia sesión como cliente. </legend>
-                <label for="nombreUsuario">Usuario:</label>
-                <input type = "text" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario" />
-                <label for="contraseñaUsuario">Contraseña:</label>
-                <input type = "password" id = "contraseñaUsuario" name="contraseñaUsuario" placeholder="Contraseña" />
-            </fieldset>
+        <section id="formularioInicioSesion_y_Registro">
+            <form>
+                <fieldset class ="inicia_sesion">
+                    <legend > Inicia sesión como cliente. </legend>
+                    <label  for="nombreUsuario">Usuario:</label>
+                    <input  type = "text" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario" />
+                    <label  for="contraseñaUsuario">Contraseña:</label>
+                    <input   type = "password" id = "contraseñaUsuario" name="contraseñaUsuario" placeholder="Contraseña" />
+                </fieldset>
 
-        </form>
-        <!-- Enlace a la alta de usuario -->
-        <a href="./html/altaUsuario.html">Regístrate como cliente</a>
-    </section>
+            </form >
+            <!-- Enlace a la alta de usuario -->
+            <a id="enlaceNuevoUsuario" href="./html/altaUsuario.html">Regístrate aquí como cliente</a>
+        </section>
+
+    </div>
+
+
 
     <!-- Menu de navegación de las secciones del sitio web-->
-    <nav>
+    <nav >
         <table>
             <tbody>
-            <tr>
-                <th><a href="./html/frutas.html">Frutas</a></th>
-                <th><a href="./html/verduras.html">Verduras</a></th>
-                <th><a href="./html/servicio_hostelería.html">Servicio a hosteleria</a></th>
-                <th><a href="./html/servicio_domicilio.html">Servicio a domicilio</a></th>
+            <tr >
+                <th><a class="menu" href="./html/frutas.html">Frutas</a></th>
+                <th><a  class="menu" href="./html/verduras.html">Verduras</a></th>
+                <th><a class="menu" href="./html/servicio_hostelería.html">Servicio a hosteleria</a></th>
+                <th><a class="menu" href="./html/servicio_domicilio.html">Servicio a domicilio</a></th>
             </tr>
             </tbody>
         </table>
     </nav>
 </header>
 
-<section id="imagenPrincipal">
+<section id="imagenPrincipal" class="informacionPrincipal">
     <!--<img src ="fotoFruteria" id="fotoFruteria" -->
 </section>
+<!-- INFORMACION PRiNCIPAL DE LA PAGINA-->
+<main>
+    <!-- Sección de productos destacados-->
+    <section id="ProductosDestacados" class="informacionPrincipal">
+        <h3>Productos destacados</h3>
+        <article id="productoDestacado01">
+            <h3> </h3>
+        </article>
 
-<section id="ProductosDestacados">
-    <article>
-        <h3> </h3>
-    </article>
-</section>
+        <article id="productoDestacado02">
+            <h3> </h3>
+        </article>
+
+        <article id="productoDestacado03">
+            <h3> </h3>
+        </article>
+    </section>
+</main>
+
+
+
 
 </body>
 </html>

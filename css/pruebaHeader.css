@@ -1,0 +1,51 @@
+#header{
+        background-color: #8fe066;
+    font-family: "Apple SD Gothic Neo", serif;
+}
+
+/*Organizo el nombre, el subtitulo y el formulario de izq a derch.*/
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*disminuyo tamaño de la fuente del enlace del registro de cliente*/
+#formularioInicioSesion_y_Registro{
+    display: block;
+    font-size: x-small;
+}
+/*organizo los campos del formulario en columna*/
+inicia_sesion{
+    display: flex;
+    flex-direction: column
+}
+#enlaceNuevoUsuario{
+    float: right;
+    font-size: smaller;
+    text-decoration: none;
+}
+.inicia_sesion{
+    display: flex;
+    flex-direction: column;
+}
+
+#subtitulo{
+    font-size: medium;
+}
+
+.menu{
+    color: #090800;
+    font-family: "Apple SD Gothic Neo", serif;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+a:visited {color:#090800; text-decoration:none;}
+
+#NombreYDescripcion{
+    display: inline-block;
+    margin: 10px;
+}
+
+main{background-color: #8fe066}
+
