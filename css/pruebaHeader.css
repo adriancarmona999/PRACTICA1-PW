@@ -1,5 +1,5 @@
 #header{
-        background-color: #8fe066;
+        background-color: #95cd74;
     font-family: "Apple SD Gothic Neo", serif;
 }
 
@@ -9,10 +9,17 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.logoYfoto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
 /*disminuyo tamaño de la fuente del enlace del registro de cliente*/
 #formularioInicioSesion_y_Registro{
-    display: block;
-    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
 }
 /*organizo los campos del formulario en columna*/
 inicia_sesion{
@@ -21,7 +28,7 @@ inicia_sesion{
 }
 #enlaceNuevoUsuario{
     float: right;
-    font-size: smaller;
+    font-size: small;
     text-decoration: none;
 }
 .inicia_sesion{
@@ -48,4 +55,17 @@ a:visited {color:#090800; text-decoration:none;}
 }
 
 main{background-color: #8fe066}
+
+img.pequeña{
+    width: 300px;
+    height: 187px;
+}
+
+.enlaceboton {
+
+    font-weight: bold;
+    padding: 4px;
+    color: #000000;
+    text-decoration: none;
+}
 
