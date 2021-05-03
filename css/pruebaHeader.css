@@ -1,71 +1,143 @@
-#header{
-        background-color: #95cd74;
-    font-family: "Apple SD Gothic Neo", serif;
+html{
+    background-color: #b2d48f;
+    font-family: "Calibri Light", sans-serif;
 }
-
-/*Organizo el nombre, el subtitulo y el formulario de izq a derch.*/
-.cabecera{
+header{
+    display: block;
+    min-width :100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.header{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
-.logoYfoto{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
+
+#logo{
+    width: 400px;
+    height: 170px;
+}
+
+#eslogan{
+    width: 30%;
+    margin: 25px;
+    font-size: large;
+    text-align: center;
 }
 /*disminuyo tamaño de la fuente del enlace del registro de cliente*/
 #formularioInicioSesion_y_Registro{
+
     display: flex;
     flex-direction: column;
     font-size: small;
 }
 /*organizo los campos del formulario en columna*/
-inicia_sesion{
+.inicia_sesion{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    font-size: large;
 }
 #enlaceNuevoUsuario{
     float: right;
     font-size: small;
-    text-decoration: none;
 }
-.inicia_sesion{
+.menu{
+    background-color: rgba(191, 151, 78, 0.73);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+    min-width: 100%;
+
+}
+
+.nav {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 50px;
+    margin-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.index_main{
+    display: flex;
+    flex-direction: row;
+}
+.foto_principal{
+    width: 650px;
+    height: 420px;
+}
+
+.titulo_producto_destacado{
+    text-align:center;
+}
+.seccion_productos_destacados{
     display: flex;
     flex-direction: column;
 }
 
-#subtitulo{
-    font-size: medium;
+#ProductosDestacados{
+    padding-left: 20px;
+    margin-left: 20px;
+    overflow-y: scroll;
+}
+.productoDestacado{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    height: 40%;
+
 }
 
-.menu{
-    color: #090800;
-    font-family: "Apple SD Gothic Neo", serif;
-    text-decoration: none;
-    margin-left: 30px;
+
+.foto_articulo{
+    width: 150px;
+    height: 100px;
+
 }
 
-a:visited {color:#090800; text-decoration:none;}
-
-#NombreYDescripcion{
-    display: inline-block;
-    margin: 10px;
-}
-
-main{background-color: #8fe066}
-
-img.pequeña{
-    width: 300px;
-    height: 187px;
-}
-
-.enlaceboton {
-
+.nombre_articulo{
     font-weight: bold;
-    padding: 4px;
-    color: #000000;
+    padding: 20px;
+}
+
+
+.contacto{
+    color: black;
+    display: inline;
     text-decoration: none;
+    text-align: center;
+
+}
+/*css para las secciones*/
+.titulo_seccion{
+    color: white;
+}
+
+/*css para el alta de usuario*/
+
+
+
+/*css para los items*/
+
+.item_main{
+    display: flex;
+    flex-direction: column;
+}
+
+.info_producto{
+    display: flex;
+    flex-direction: row;
+}
+
+.foto_item{
+    width: 400px;
+    height: 400px;
 }
 

@@ -7,74 +7,94 @@
 </head>
 
 <body>
-<header id="header" >
-    <section id="imagenLogo">
-        <!--<img src ="logoFrutasMarga" id="logo01" -->
+<header>
+
+    <section class="header">
+        <section >
+            <img src ="../img/Logo.PNG" id="logo">
+        </section>
+        <section id="eslogan" >
+            <p>Bienvenido a la página web de Frutas Marga</p>
+        </section>
+
+        <!-- Log in de usuario -->
+        <section id="formularioInicioSesion_y_Registro" class="cabecera">
+            <form class ="inicia_sesion">
+                <label  for="nombreUsuario">Usuario:</label>
+                <input  type = "text" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario" />
+                <label  for="contraseñaUsuario">Contraseña:</label>
+                <input   type = "password" id = "contraseñaUsuario" name="contraseñaUsuario" placeholder="Contraseña" />
+                <a href="../html/sitioweb.html" class="enlaceboton">Inicia sesión </a>
+            </form >
+            <!-- Enlace a la alta de usuario -->
+            <a id="enlaceNuevoUsuario" href="../html/altaUsuario.html">Regístrate aquí como cliente</a>
+        </section>
     </section>
 
-    <section id="NombreYDescripcion">
-        <h1>Frutas Marga</h1>
-        <h3>Puesto nº 1 en el mercado municipal MERCA 80.</h3>
-    </section>
 
-    <nav>
-        <table>
-            <tbody>
-            <tr>
-                <th><a href="frutas.html">Frutas</a></th>
-                <th><a href="verduras.html">Verduras</a></th>
-                <th><a href="servicio_hostelería.html">Servicio a hosteleria</a></th>
-                <th><a href="servicio_domicilio.html">Servicio a domicilio</a></th>
-            </tr>
-            </tbody>
-        </table>
+
+
+
+    <!-- Menu de navegación de las secciones del sitio web-->
+    <nav >
+        <ul class="menu">
+
+            <li><a class="nav" href="../html/seccion1.html">Sección 1</a></li>
+            <li><a   class="nav" href="../html/seccion2.html">Sección 2</a></li>
+            <li><a class="nav" href="../html/seccion2.html">Sección 3</a></li>
+            <li><a  class="nav" href="../html/seccion2.html">Sección 4</a></li>
+        </ul>
+
     </nav>
 </header>
 
     <main >
+            <section class="item_main">
 
-            <seccion class="imagen_producto">
-                <img src ="../img/cherrys_pequeño.jpg" class="pequeña">
-            </seccion>
 
-            <section class="campos_producto">
-                <table>
-                    <tbody>
+                <section class="info_producto">
+                    <section class="imagen_producto">
+                        <img src ="../img/tomate-cherry.jpg" class="foto_item">
+                    </section>
+                    <section class="campos_producto">
+                        <table>
+                            <tbody>
 
-                    <tr>
-                        <td>Nombre: </td>
-                        <td>Tomate</td>
-                    </tr>
-                    <tr>
-                        <td>Tipo:  </td>
-                        <td>Cherry</td>
-                    </tr>
+                            <tr>
+                                <td>Nombre: </td>
+                                <td>Tomate</td>
+                            </tr>
+                            <tr>
+                                <td>Tipo:  </td>
+                                <td>Cherry</td>
+                            </tr>
 
-                    <tr>
-                        <td>Variedad:  </td>
-                        <td>Colores</td>
-                    </tr>
+                            <tr>
+                                <td>Variedad:  </td>
+                                <td>Colores</td>
+                            </tr>
 
-                    <tr>
-                        <td>Categoria:  </td>
-                        <td>1ª</td>
-                    </tr>
+                            <tr>
+                                <td>Categoria:  </td>
+                                <td>1ª</td>
+                            </tr>
 
-                    <tr>
-                        <td>Precio:  </td>
-                        <td>3'95 €</td>
-                    </tr>
-                    </tbody>
+                            <tr>
+                                <td>Precio:  </td>
+                                <td>3'95 €</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
 
-                </table>
+
+
+                    <section class="descripcion_producto">
+                        <p >Descripción:</p>
+                        <p>Tomate cherry de origen Motrileño, de primera categoria y de la variedad Candy Cherry</p>
+                    </section>
             </section>
-
-
-
-        <section class="descripcion_producto">
-            <p >Descripción:</p>
-            <p>Tomate cherry de origen Motrileño, de primera categoria y de la variedad Candy Cherry</p>
-        </section>
 
 
     </main>

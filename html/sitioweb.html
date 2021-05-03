@@ -7,43 +7,77 @@
         Servicio a domicilio. Servicio a hosteleria. Fruteria Online
     </title>
 
+    <link rel = "stylesheet" type = "text/css" href = "../css/pruebaHeader.css" />
+
 
 </head>
 <body>
 
-<header id="header" >
-    <section id="imagenLogo">
-        <!--<img src ="logoFrutasMarga" id="logo01" -->
+<header>
+
+    <section class="header">
+        <section >
+            <img src ="../img/Logo.PNG" id="logo">
+        </section>
+        <section id="eslogan" >
+            <p>Bienvenido a la página web de Frutas Marga</p>
+        </section>
+
+        <section>USUARIO: Menganito</section>
+
     </section>
 
-    <section id="NombreYDescripcion">
-        <h1>Frutas Marga</h1>
-        <h3>Puesto nº 1 en el mercado municipal MERCA 80.</h3>
-    </section>
 
-    <nav>
-        <table>
-            <tbody>
-            <tr>
-                <th><a href="frutas.html">Frutas</a></th>
-                <th><a href="verduras.html">Verduras</a></th>
-                <th><a href="servicio_hostelería.html">Servicio a hosteleria</a></th>
-                <th><a href="servicio_domicilio.html">Servicio a domicilio</a></th>
-            </tr>
-            </tbody>
-        </table>
+
+
+
+    <!-- Menu de navegación de las secciones del sitio web-->
+    <nav >
+        <ul class="menu">
+
+            <li><a class="nav" href="../html/seccion1.html">Sección 1</a></li>
+            <li><a   class="nav" href="../html/seccion2.html">Sección 2</a></li>
+            <li><a class="nav" href="../html/seccion2.html">Sección 3</a></li>
+            <li><a  class="nav" href="../html/seccion2.html">Sección 4</a></li>
+        </ul>
+
     </nav>
 </header>
 
-<section id="imagenPrincipal">
-    <!--<img src ="fotoFruteria" id="fotoFruteria" -->
-</section>
+<!-- INFORMACION PRiNCIPAL DE LA PAGINA-->
+<main>
+    <section id="imagenPrincipal" >
+        <img src ="../img/IMG_1698.jpg" class="foto_principal">
+    </section>
 
-<section id="ProductosDestacados">
-    <article>
-        <h3> </h3>
-    </article>
-</section>
+    <!-- Sección de productos destacados-->
+    <section class="seccion_productos_destacados">
+        <h3 class="titulo_producto_destacado">Algunos items destacados</h3>
+        <section id="ProductosDestacados" >
+
+            <article class="productoDestacado">
+                <img src ="../img/tomate-cherry.jpg" class="foto_articulo">
+                <h3 class="nombre_articulo">Tomate cherry</h3>
+            </article>
+
+            <article class="productoDestacado">
+                <img src ="../img/niscalos.jpeg" class="foto_articulo">
+                <h3 class="nombre_articulo">Niscalos</h3>
+            </article>
+
+            <article class="productoDestacado">
+                <img src ="../img/lima-mexicana.jpg" class="foto_articulo">
+                <h3 class="nombre_articulo"> Limas</h3>
+            </article>
+        </section>
+    </section>
+
+</main>
+
+<footer class="contacto" >
+    <a class="try" href="../html/contacto.html">Contacto -- </a>
+    <a class="try" href="../html/seccion1.html">Como se hizo </a>
+</footer>
 
 </body>
 </html>

@@ -5,81 +5,90 @@
     <title>
         Frutas Marga
     </title>
-    <link rel = "stylesheet" type = "text/css" href = "./css/pruebaHeader.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/pruebaHeader.css" />
 </head>
 
 <!--Tiene que tener diseño adaptativo (responsive design) -->
 <body>
 
-<header id="header">
+    <header>
 
+        <section class="header">
+            <section >
+                <img src ="./img/Logo.PNG" id="logo">
+            </section>
+            <section id="eslogan" >
+                <p>Bienvenido a la página web de Frutas Marga</p>
+            </section>
 
-        <section id="imagenLogo">
-            <img src ="./img/IMG_1698.jpg" class="pequeña">
+        <!-- Log in de usuario -->
+            <section id="formularioInicioSesion_y_Registro" class="cabecera">
+                <form class ="inicia_sesion">
+                        <label  for="nombreUsuario">Usuario:</label>
+                        <input  type = "text" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario" />
+                        <label  for="contraseñaUsuario">Contraseña:</label>
+                        <input   type = "password" id = "contraseñaUsuario" name="contraseñaUsuario" placeholder="Contraseña" />
+                        <a href="./html/sitioweb.html" class="enlaceboton">Inicia sesión </a>
+                </form >
+                <!-- Enlace a la alta de usuario -->
+                <a id="enlaceNuevoUsuario" href="./html/altaUsuario.html">Regístrate aquí como cliente</a>
+            </section>
         </section>
-        <section id="NombreYDescripcion">
-            <h1>Frutas Marga</h1>
-            <h3 id="subtitulo">Puesto nº 1 en el mercado municipal MERCA 80.</h3>
+
+
+
+
+
+        <!-- Menu de navegación de las secciones del sitio web-->
+        <nav >
+            <ul class="menu">
+
+                <li><a class="nav" href="html/seccion1.html">Sección 1</a></li>
+                <li><a   class="nav" href="html/seccion2.html">Sección 2</a></li>
+                <li><a class="nav" href="./html/seccion2.html">Sección 3</a></li>
+                <li><a  class="nav" href="./html/seccion2.html">Sección 4</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- INFORMACION PRiNCIPAL DE LA PAGINA-->
+    <main class="index_main">
+
+        <section id="imagenPrincipal" >
+         <img src ="./img/IMG_1698.jpg" class="foto_principal">
         </section>
 
-    <!-- Log in de usuario -->
-        <section id="formularioInicioSesion_y_Registro">
-            <form class ="inicia_sesion">
-                    <label  for="nombreUsuario">Usuario:</label>
-                    <input  type = "text" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario" />
-                    <label  for="contraseñaUsuario">Contraseña:</label>
-                    <input   type = "password" id = "contraseñaUsuario" name="contraseñaUsuario" placeholder="Contraseña" />
-                    <a href="./html/sitioweb.html" class="enlaceboton">Inicia sesión </a>
-            </form >
-            <!-- Enlace a la alta de usuario -->
-            <a id="enlaceNuevoUsuario" href="./html/altaUsuario.html">Regístrate aquí como cliente</a>
+        <!-- Sección de productos destacados-->
+        <section class="seccion_productos_destacados">
+
+            <h3 class="titulo_producto_destacado">Algunos items destacados</h3>
+
+            <section id="ProductosDestacados" >
+
+                <article class="productoDestacado">
+                    <img src ="./img/tomate-cherry.jpg" class="foto_articulo">
+                    <h3 class="nombre_articulo">Tomate cherry</h3>
+                </article>
+
+                <article class="productoDestacado">
+                    <img src ="./img/niscalos.jpeg" class="foto_articulo">
+                    <h3 class="nombre_articulo">Niscalos</h3>
+                </article>
+
+                <article class="productoDestacado">
+                    <img src ="./img/lima-mexicana.jpg" class="foto_articulo">
+                    <h3 class="nombre_articulo"> Limas</h3>
+                </article>
+            </section>
         </section>
 
 
+    </main>
 
-
-
-    <!-- Menu de navegación de las secciones del sitio web-->
-    <nav >
-        <table>
-            <tbody>
-            <tr >
-                <th><a class="menu" href="./html/frutas.html">Frutas</a></th>
-                <th><a  class="menu" href="./html/verduras.html">Verduras</a></th>
-                <th><a class="menu" href="./html/servicio_hostelería.html">Servicio a hosteleria</a></th>
-                <th><a class="menu" href="./html/servicio_domicilio.html">Servicio a domicilio</a></th>
-            </tr>
-            </tbody>
-        </table>
-    </nav>
-</header>
-
-<section id="imagenPrincipal" class="informacionPrincipal">
-    <!-- <img src ="./img/IMG_1698.jpg" class="grande"> -->
-</section>
-<!-- INFORMACION PRiNCIPAL DE LA PAGINA-->
-<main>
-    <!-- Sección de productos destacados-->
-    <section id="ProductosDestacados" class="informacionPrincipal">
-        <h3>Productos destacados</h3>
-        <article id="productoDestacado01">
-            <h3> </h3>
-        </article>
-
-        <article id="productoDestacado02">
-            <h3> </h3>
-        </article>
-
-        <article id="productoDestacado03">
-            <h3> </h3>
-        </article>
-    </section>
-</main>
-
-    <footer>
-        <a class="contacto" href="./html/frutas.html">Contacto</a>
-        <p> - </p>
-        <a class="contacto" href="./html/frutas.html">Como se hizo</a>
+    <footer class="contacto" >
+        <a class="try" href="html/contacto.html">Contacto -- </a>
+        <a class="try" href="html/seccion1.html">Como se hizo </a>
     </footer>
 
 
