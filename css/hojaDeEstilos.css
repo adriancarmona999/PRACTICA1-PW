@@ -19,6 +19,7 @@ a{
 #logo{
     width: 400px;
     height: 170px;
+    border-radius: 20px;
 }
 
 #eslogan{
@@ -44,24 +45,29 @@ a{
     float: right;
     font-size: small;
 }
-.menu{
+.menu ul{
     background-color: rgba(191, 151, 78, 0.73);
-    display: flex;
-    flex-direction: row;
     list-style: none;
-    flex-wrap: nowrap;
-    min-width: 100%;
+
+}
+.menu li {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 15px;
+
 
 }
 
-.nav {
-    font-weight: bold;
-    display: inline-block;
-    font-size: 20px;
-    padding-left: 50px;
-    margin-left: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.menu a{
+    display: block;
+    width: 100px;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu a:hover{
+    background: rgba(141, 101, 28, 0.73);
 
 }
 
@@ -71,7 +77,8 @@ a{
 }
 .foto_principal{
     width: 650px;
-    height: 420px;
+    height: 440px;
+    border-radius: 20px;
 }
 
 .titulo_producto_destacado{
@@ -80,25 +87,31 @@ a{
 .seccion_productos_destacados{
     display: flex;
     flex-direction: column;
+    padding-left:100px;
+    padding-right :100px;
 }
 
 #ProductosDestacados{
     padding-left: 20px;
-    margin-left: 20px;
+    padding-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
     overflow-y: scroll;
+    background: rgba(191, 151, 78, 0.73);
+    max-height: 350px;
 }
 .productoDestacado{
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     height: 40%;
-
 }
 
 
 .foto_articulo{
     width: 150px;
     height: 100px;
+    border-radius: 20px;
 
 }
 
@@ -108,12 +121,14 @@ a{
 }
 
 
-.contacto{
+.contacto ul{
     color: black;
-    display: inline;
-    text-decoration: none;
+    list-style: none;
     text-align: center;
 
+}
+.contacto li{
+    display: inline-block;
 }
 /*css para las secciones*/
 .titulo_seccion{

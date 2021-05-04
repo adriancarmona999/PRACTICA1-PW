@@ -5,7 +5,7 @@
     <title>
         Frutas Marga
     </title>
-    <link rel = "stylesheet" type = "text/css" href = "css/pruebaHeader.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/hojaDeEstilos.css" />
 </head>
 
 <!--Tiene que tener diseño adaptativo (responsive design) -->
@@ -40,13 +40,12 @@
 
 
         <!-- Menu de navegación de las secciones del sitio web-->
-        <nav >
-            <ul class="menu">
-
-                <li><a class="nav" href="html/seccion1.html">Sección 1</a></li>
-                <li><a   class="nav" href="html/seccion2.html">Sección 2</a></li>
-                <li><a class="nav" href="./html/seccion2.html">Sección 3</a></li>
-                <li><a  class="nav" href="./html/seccion2.html">Sección 4</a></li>
+        <nav class="menu">
+            <ul >
+                <li><a  href="html/seccion1.html">Sección 1</a></li>
+                <li><a    href="html/seccion2.html">Sección 2</a></li>
+                <li><a  href="./html/seccion2.html">Sección 3</a></li>
+                <li><a   href="./html/seccion2.html">Sección 4</a></li>
             </ul>
 
         </nav>
@@ -67,19 +66,26 @@
             <section id="ProductosDestacados" >
 
                 <article class="productoDestacado">
-                    <img src ="./img/tomate-cherry.jpg" class="foto_articulo">
-                    <h3 class="nombre_articulo">Tomate cherry</h3>
+                    <a href="html/item4.html"><img src ="./img/niscalos.jpeg" class="foto_articulo"></a>
+                    <a href="html/item4.html"> <h3 class="nombre_articulo">Niscalos</h3></a>
                 </article>
 
                 <article class="productoDestacado">
-                    <img src ="./img/niscalos.jpeg" class="foto_articulo">
-                    <h3 class="nombre_articulo">Niscalos</h3>
+                    <a href="html/item3.html"><img src ="./img/lima-mexicana.jpg" class="foto_articulo"></a>
+                    <a href="html/item3.html"><h3 class="nombre_articulo"> Limas</h3></a>
                 </article>
 
                 <article class="productoDestacado">
-                    <img src ="./img/lima-mexicana.jpg" class="foto_articulo">
-                    <h3 class="nombre_articulo"> Limas</h3>
+                    <a href="html/item2.html" ><img src ="./img/fresas.png" class="foto_articulo"></a>
+                    <a href="html/item2.html" ><h3 class="nombre_articulo"> Fresas</h3></a>
                 </article>
+
+                <article class="productoDestacado">
+                    <a href="html/item1.html"> <img src ="./img/tomate-cherry.jpg" class="foto_articulo"></a>
+                    <a href="html/item1.html"><h3 class="nombre_articulo">Tomate cherry</h3></a>
+                </article>
+
+
             </section>
         </section>
 
@@ -87,8 +93,12 @@
     </main>
 
     <footer class="contacto" >
-        <a class="try" href="html/contacto.html">Contacto -- </a>
-        <a class="try" href="html/seccion1.html">Como se hizo </a>
+        <ul>
+            <li><a class="try" href="html/contacto.html">Contacto -- </a></li>
+            <li><a class="try" href="html/seccion1.html">Como se hizo </a></li>
+
+        </ul>
+
     </footer>
 
 
