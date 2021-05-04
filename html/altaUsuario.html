@@ -16,8 +16,18 @@
             <p>Bienvenido a la página web de Frutas Marga</p>
         </section>
 
-        <section>USUARIO: Menganito</section>
-
+        <!-- Log in de usuario -->
+        <section id="formularioInicioSesion_y_Registro" class="cabecera">
+            <form class ="inicia_sesion">
+                <label  for="nombreUsuario">Usuario:</label>
+                <input  type = "text" id = "nombre_Usuario" name="nombreUsuario" placeholder="Nombre de usuario" />
+                <label  for="contraseñaUsuario">Contraseña:</label>
+                <input   type = "password" id = "contraseñaUsuario" name="contraseñaUsuario" placeholder="Contraseña" />
+                <a href="../html/sitioweb.html" class="enlaceboton">Inicia sesión </a>
+            </form >
+            <!-- Enlace a la alta de usuario -->
+            <a id="enlaceNuevoUsuario" href="../html/altaUsuario.html">Regístrate aquí como cliente</a>
+        </section>
     </section>
 
 
@@ -25,34 +35,48 @@
 
 
     <!-- Menu de navegación de las secciones del sitio web-->
-    <nav >
-        <ul class="menu">
-
-            <li><a class="nav" href="../html/seccion1.html">Sección 1</a></li>
-            <li><a   class="nav" href="../html/seccion2.html">Sección 2</a></li>
-            <li><a class="nav" href="../html/seccion2.html">Sección 3</a></li>
-            <li><a  class="nav" href="../html/seccion2.html">Sección 4</a></li>
+    <nav class="menu">
+        <ul >
+            <li><a  href="../html/seccion1.html">Sección 1</a></li>
+            <li><a    href="../html/seccion2.html">Sección 2</a></li>
+            <li><a  href="../html/seccion2.html">Sección 3</a></li>
+            <li><a   href="../html/seccion2.html">Sección 4</a></li>
         </ul>
 
     </nav>
 </header>
-<form>
-    <label for="nombreUsuario">Nombre:</label>
-    <input type = "text" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre y apellidos" />
-    <br>
-    <label for="correoElectronico">Correo:</label>
-    <input type = "email" id = "correoElectronico" name="correoElectronico" placeholder="Correo Electrónico" />
-    <br>
-    <label for="campoDeTexto3">Telefono:</label>
-    <input type = "number" id = "campoDeTexto3" name="campoDeTexto3" placeholder="Telefono" />
-    <br>
-    <label for="direccionPostal">Dirección postal</label>
-    <input type = "date" id = "direccionPostal" name="direccionPostal" placeholder="Dirección postal" />
-    <br>
-    <input type = "submit" id = "button1" value = "Inscribir"/>
-    <input type = "reset" id = "button2" value = "Limpiar campos" />
-</form>
-
+<main>
+    <form class="form_alta_usuario">
+        <label for="nombreUsuario">Nombre:</label>
+        <input type = "text" class="form_alta_usuario" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre y apellidos" />
+        <br>
+        <label for="correoElectronico">Correo:</label>
+        <input type = "email" class="form_alta_usuario" id = "correoElectronico" name="correoElectronico" placeholder="Correo Electrónico" />
+        <br>
+        <label for="campoDeTexto3">Telefono:</label>
+        <input type = "number" class="form_alta_usuario" id = "campoDeTexto3" name="campoDeTexto3" placeholder="Telefono" />
+        <br>
+        <label for="direccionPostal">Dirección postal</label>
+        <textarea class="form_alta_usuario" id = "direccionPostal" placeholder="¿Donde resides habitualmente?"></textarea>
+        <br>
+        <label for="conocerTienda">¿Como nos ha conocido?</label>
+        <select id="conocerTienda">
+            <option value="0">Eres cliente o clienta de MERCA80</option>
+            <option value="1">Redes Sociales </option>
+            <option value="2">Familiares </option>
+            <option value="3">Publicidad en buzón físico </option>
+            <option value="4">Publicidad en buzón electrónico </option>
+            <option value="5">Amigos</option>
+        </select>
+        <br>
+        <p>¿Te gustaria recibir tu pedido semanal de fruta y verdura en casa?</p>
+        <label for="checkPedidos">Sí</label>
+        <input type = "checkbox" id = "checkPedidos" value = "Sí" />
+        <br>
+        <input type = "submit" id = "button1" value = "Inscribir"/>
+        <input type = "reset" id = "button2" value = "Limpiar campos" />
+    </form>
+</main>
 
 </body>
 </html>

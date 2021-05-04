@@ -16,8 +16,18 @@
             <p>Bienvenido a la página web de Frutas Marga</p>
         </section>
 
-        <section>USUARIO: Menganito</section>
-
+        <!-- Log in de usuario -->
+        <section id="formularioInicioSesion_y_Registro" class="cabecera">
+            <form class ="inicia_sesion">
+                <label  for="nombreUsuario">Usuario:</label>
+                <input  type = "text" id = "nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario" />
+                <label  for="contraseñaUsuario">Contraseña:</label>
+                <input   type = "password" id = "contraseñaUsuario" name="contraseñaUsuario" placeholder="Contraseña" />
+                <a href="../html/sitioweb.html" class="enlaceboton">Inicia sesión </a>
+            </form >
+            <!-- Enlace a la alta de usuario -->
+            <a id="enlaceNuevoUsuario" href="../html/altaUsuario.html">Regístrate aquí como cliente</a>
+        </section>
     </section>
 
 
@@ -25,53 +35,106 @@
 
 
     <!-- Menu de navegación de las secciones del sitio web-->
-    <nav >
-        <ul class="menu">
-
-            <li><a class="nav" href="../html/seccion1.html">Sección 1</a></li>
-            <li><a   class="nav" href="../html/seccion2.html">Sección 2</a></li>
-            <li><a class="nav" href="../html/seccion2.html">Sección 3</a></li>
-            <li><a  class="nav" href="../html/seccion2.html">Sección 4</a></li>
+    <nav class="menu">
+        <ul >
+            <li><a  href="../html/seccion1.html">Fruta</a></li>
+            <li><a    href="../html/seccion2.html">Verdura</a></li>
+            <li><a  href="../html/seccion2.html">Hosteleria</a></li>
+            <li><a   href="../html/seccion2.html">Domicilio</a></li>
         </ul>
 
     </nav>
 </header>
 
 <main>
-    <h3 class="titulo_seccion">FRUTAS</h3>
+    <h3 class="titulo_seccion">FRUTA</h3>
 
-    <article >
+    <table class="tabla_articulos">
+        <tbody>
+        <tr>
+            <td class="articulo">
+                <a href="../html/item2.html" ><img src ="../img/fresas.png" class="foto_articulo"></a>
+                <a href="../html/item2.html" ><h3 class="nombre_articulo"> Fresas</h3></a>
+            </td>
 
-    </article>
 
-    <article >
 
-    </article>
+            <td class="articulo">
+                <a href="../html/item4.html"><img src ="../img/IMG_1708.jpg" class="foto_articulo"></a>
+                <a href="../html/item4.html"> <h3 class="nombre_articulo">Naranjas</h3></a>
 
-    <article >
+            </td>
 
-    </article>
 
-    <article >
 
-    </article>
+            <td class="articulo">
+                <a href="../html/item3.html"><img src ="../img/lima-mexicana.jpg" class="foto_articulo"></a>
+                <a href="../html/item3.html"><h3 class="nombre_articulo"> Limas</h3></a>
 
-    <article >
+            </td>
+        </tr>
 
-    </article>
+        <tr>
+            <td class="articulo">
+                <a href="../html/item2.html" ><img src ="../img/fresas.png" class="foto_articulo"></a>
+                <a href="../html/item2.html" ><h3 class="nombre_articulo"> Fresas</h3></a>
 
-    <article >
+            </td>
 
-    </article>
 
-    <article >
 
-    </article>
+            <td class="articulo">
+                <a href="../html/item4.html"><img src ="../img/IMG_1708.jpg" class="foto_articulo"></a>
+                <a href="../html/item4.html"> <h3 class="nombre_articulo">Naranjas</h3></a>
 
-    <article >
+            </td>
 
-    </article>
+
+
+            <td class="articulo">
+                <a href="../html/item3.html"><img src ="../img/lima-mexicana.jpg" class="foto_articulo"></a>
+                <a href="../html/item3.html"><h3 class="nombre_articulo"> Limas</h3></a>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="articulo">
+                <a href="../html/item2.html" ><img src ="../img/fresas.png" class="foto_articulo"></a>
+                <a href="../html/item2.html" ><h3 class="nombre_articulo"> Fresas</h3></a>
+
+            </td>
+
+
+
+            <td class="articulo">
+                <a href="../html/item4.html"><img src ="../img/IMG_1708.jpg" class="foto_articulo"></a>
+                <a href="../html/item4.html"> <h3 class="nombre_articulo">Naranjas</h3></a>
+
+            </td>
+
+
+
+            <td class="articulo">
+                <a href="../html/item3.html"><img src ="../img/lima-mexicana.jpg" class="foto_articulo"></a>
+                <a href="../html/item3.html"><h3 class="nombre_articulo"> Limas</h3></a>
+
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
 </main>
+
+<footer class="contacto" >
+    <ul>
+        <li><a class="try" href="../html/contacto.html">Contacto --- </a></li>
+        <li><a class="try" href="../html/seccion1.html">Como se hizo </a></li>
+
+    </ul>
+
+</footer>
 
 
 </body>
