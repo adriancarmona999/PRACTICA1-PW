@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Item1: Tomate Cherry</title>
+    <title>Item3: Naranja</title>
     <link rel = "stylesheet" type = "text/css" href = "../css/hojaDeEstilos.css" />
 </head>
 
@@ -11,93 +11,99 @@
 
     <section class="header">
         <section >
-            <img src ="../img/Logo.PNG" id="logo">
+            <a href="sitioweb.html"><img src ="../img/Logo.PNG" id="logo"> </a>
         </section>
+
         <section id="eslogan" >
             <p>Bienvenido a la página web de Frutas Marga</p>
         </section>
 
-        <section>USUARIO: Menganito</section>
+        <section class="UsuarioyAdministracion">
+            <section class="usuarioIniciado">USUARIO: Menganito</section>
+            <section><a id="administracion" href="altaItem.html"> Administración</a></section>
+        </section>
 
     </section>
 
-
-
-
-
     <!-- Menu de navegación de las secciones del sitio web-->
-    <nav >
-        <ul class="menu">
-
-            <li><a class="nav" href="../html/seccion1.html">Sección 1</a></li>
-            <li><a   class="nav" href="../html/seccion2.html">Sección 2</a></li>
-            <li><a class="nav" href="../html/seccion2.html">Sección 3</a></li>
-            <li><a  class="nav" href="../html/seccion2.html">Sección 4</a></li>
+    <nav class="menu">
+        <ul >
+            <li><a href="../html/seccion1.html">Fruta</a></li>
+            <li><a href="../html/seccion2.html">Verdura</a></li>
+            <li><a href="../html/seccion2.html">Hostelería</a></li>
+            <li><a href="../html/seccion2.html">Domicilio</a></li>
         </ul>
 
     </nav>
 </header>
 
-    <main >
-            <section class="item_main">
+<main >
+    <section class="item_main">
 
 
-                <section class="info_producto">
-                    <section class="imagen_producto">
-                        <img src ="../img/tomate-cherry.jpg" class="foto_item">
-                    </section>
-                    <section class="campos_producto">
-                        <table>
-                            <tbody>
-
-                            <tr>
-                                <td>Nombre: </td>
-                                <td>Tomate</td>
-                            </tr>
-                            <tr>
-                                <td>Tipo:  </td>
-                                <td>Cherry</td>
-                            </tr>
-
-                            <tr>
-                                <td>Variedad:  </td>
-                                <td>Colores</td>
-                            </tr>
-
-                            <tr>
-                                <td>Categoria:  </td>
-                                <td>1ª</td>
-                            </tr>
-
-                            <tr>
-                                <td>Precio:  </td>
-                                <td>3'95 €</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                </section>
-
-
-
-                    <section class="descripcion_producto">
-                        <p >Descripción:</p>
-                        <p>Tomate cherry de origen Motrileño, de primera categoria y de la variedad Candy Cherry</p>
-                    </section>
+        <section class="info_producto">
+            <section class="imagen_producto">
+                <img src ="../img/IMG_1708.jpg" class="foto_item">
             </section>
+            <table class="tabla_item">
+                <tbody>
+
+                <tr>
+                    <td>Nombre: </td>
+                    <td>Naranja</td>
+                </tr>
+                <tr>
+                    <td>Tipo:  </td>
+                    <td>Zumo</td>
+                </tr>
+
+                <tr>
+                    <td>Variedad:  </td>
+                    <td>Valencia Late</td>
+                </tr>
+
+                <tr>
+                    <td>Categoria:  </td>
+                    <td>1ª</td>
+                </tr>
+
+                <tr>
+                    <td >Precio:  </td>
+                    <td class="precio" >4'95 €</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
 
 
-    </main>
 
-    <aside>
+    <section class="descripcion_producto">
+        <p class="titulo_descripcion">Descripción:</p>
+        <p class="descripcion">Naranjas de zumo valencianas de alta calidad y alto contenido en agua.</p>
+    </section>
+    </section>
 
-    </aside>
 
-<footer>
-    <a class="contacto" href="./html/frutas.html">Contacto</a>
-    <p> - </p>
-    <a class="contacto" href="./html/frutas.html">Como se hizo</a>
+</main>
+
+<section class="navegacion_items">
+    <ul>
+        <li><a  href="../html/item4.html">Anterior</a></li>
+        <li><a  href="../html/item4.html">Siquiente</a></li>
+    </ul>
+
+</section>
+
+<footer class="contacto" >
+    <ul>
+        <li><a class="try" href="../html/contacto.html">Contacto --- </a></li>
+        <li><a class="try" href="../html/seccion1.html">Como se hizo </a></li>
+
+    </ul>
+
 </footer>
+
 
 </body>
 </html>

@@ -11,27 +11,27 @@
 
     <section class="header">
         <section >
-            <img src ="../img/Logo.PNG" id="logo">
+            <a href="sitioweb.html"><img src ="../img/Logo.PNG" id="logo"> </a>
         </section>
+
         <section id="eslogan" >
             <p>Bienvenido a la página web de Frutas Marga</p>
         </section>
 
-        <section>USUARIO: Menganito</section>
+        <section class="UsuarioyAdministracion">
+            <section class="usuarioIniciado">USUARIO: Menganito</section>
+            <section><a id="administracion" href="altaItem.html"> Administración</a></section>
+        </section>
 
     </section>
 
-
-
-
-
     <!-- Menu de navegación de las secciones del sitio web-->
-    <nav >
-        <ul class="menu">
-            <li><a class="nav" href="../html/seccion1.html">Sección 1</a></li>
-            <li><a   class="nav" href="../html/seccion2.html">Sección 2</a></li>
-            <li><a class="nav" href="../html/seccion2.html">Sección 3</a></li>
-            <li><a  class="nav" href="../html/seccion2.html">Sección 4</a></li>
+    <nav class="menu">
+        <ul >
+            <li><a href="../html/seccion1.html">Fruta</a></li>
+            <li><a href="../html/seccion2.html">Verdura</a></li>
+            <li><a href="../html/seccion2.html">Hostelería</a></li>
+            <li><a href="../html/seccion2.html">Domicilio</a></li>
         </ul>
 
     </nav>
@@ -45,8 +45,7 @@
                     <section class="imagen_producto">
                         <img src ="../img/tomate-cherry.jpg" class="foto_item">
                     </section>
-                    <section class="campos_producto">
-                        <table>
+                        <table class="tabla_item">
                             <tbody>
 
                             <tr>
@@ -69,8 +68,8 @@
                             </tr>
 
                             <tr>
-                                <td>Precio:  </td>
-                                <td>3'95 €</td>
+                                <td >Precio:  </td>
+                                <td class="precio" >3'95 €</td>
                             </tr>
                             </tbody>
                         </table>
@@ -80,23 +79,32 @@
 
 
                     <section class="descripcion_producto">
-                        <p >Descripción:</p>
-                        <p>Tomate cherry de origen Motrileño, de primera categoria y de la variedad Candy Cherry</p>
+                        <p class="titulo_descripcion">Descripción:</p>
+                        <p class="descripcion">Tomate cherry de origen Motrileño, de primera categoria y de la variedad Candy Cherry</p>
                     </section>
             </section>
 
 
     </main>
 
-    <aside>
+<section class="navegacion_items">
+    <ul>
+        <li><a  href="../html/item2.html">Anterior</a></li>
+        <li><a  href="../html/item2.html">Siquiente</a></li>
+    </ul>
 
-    </aside>
+</section>
 
-<footer>
-    <a class="contacto" href="./html/frutas.html">Contacto</a>
-    <p> - </p>
-    <a class="contacto" href="./html/frutas.html">Como se hizo</a>
+
+<footer class="contacto" >
+    <ul>
+        <li><a class="try" href="../html/contacto.html">Contacto --- </a></li>
+        <li><a class="try" href="../html/seccion1.html">Como se hizo </a></li>
+
+    </ul>
+
 </footer>
+
 
 </body>
 </html>
